@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi bella novia</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="audio" autoplay loop>
+        <source src="./assets/music/yung_kai.mp3" type="audio/mp3">
+        <source src="./assets/music/yung_kai.ogg" type="audio/ogg">
+        Tu navegador no soporta el formato de audio.
+    </audio>
+
+    <div class="carta" onclick="mostrarHoja()">
+        <div class="hoja">
+            <p class="mensaje">Se que no es el regalo que esperabas el día de hoy, pero quise hacerte algo, con lo que
+                soy bueno. No te voy a preguntar:¿Quieres ser mi San Valentín?, si no, <strong>Quiero que tú,
+                    seas mi Valentín.</strong></p>
+
+            <p class="firma">¡Te quiero mucho!</p>
+            <p class="firma">¡Mi amor bello! ❤️</p>
+        </div>
+        <div class="corazon"></div>
+    </div>
+
+    <script>
+        function mostrarHoja() {
+            const hoja = document.querySelector(".hoja");
+
+            if (hoja.classList.contains("subir-hoja")) {
+                hoja.classList.remove("subir-hoja");
+            } else {
+                hoja.classList.add("subir-hoja");
+            }
+        }
+    </script>
+</body>
+
+</html>
