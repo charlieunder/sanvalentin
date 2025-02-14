@@ -16,6 +16,15 @@
         Tu navegador no soporta el formato de audio.
     </audio>
 
+    <script>
+        document.addEventListener("click", function() {
+            let audio = document.getElementById("audio");
+            if (audio.paused) {
+                audio.play();
+            }
+        }, { once: true }); // Se ejecuta solo una vez
+    </script>
+
     <div class="carta" onclick="mostrarHoja()">
         <div class="hoja">
             <p class="mensaje">Se que no es el regalo que esperabas el día de hoy, pero quise hacerte algo, con lo que
